@@ -14,9 +14,12 @@ public class PlayerAgent : Agent
     [SerializeField]
     private GameObject target;
 
+    private Vector3 originalPosition;
+
     public override void Initialize()
     {
         playerRigidbod = GetComponent<Rigidbody>();
+        originalPosition = transform.localPosition;
     }
 
     public override void CollectObservations(VectorSensor sensor)
