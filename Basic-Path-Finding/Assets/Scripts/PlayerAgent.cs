@@ -9,7 +9,7 @@ public class PlayerAgent : Agent
     [SerializeField]
     private float speed = 10.0f;
 
-    private Rigidbody playerRigidbod;
+    private Rigidbody playerRigidbody;
 
     [SerializeField]
     private GameObject target;
@@ -18,18 +18,31 @@ public class PlayerAgent : Agent
 
     public override void Initialize()
     {
-        playerRigidbod = GetComponent<Rigidbody>();
+        playerRigidbody = GetComponent<Rigidbody>();
         originalPosition = transform.localPosition;
+    }
+
+    public override void OnEpisodeBegin()
+    {
+
     }
 
     public override void CollectObservations(VectorSensor sensor)
     {
-        base.CollectObservations(sensor);
+        sensor.AddObservation(transform.localPosition);
+        sensor.AddObservation(target.transform.localPosition);
+
+        sensor.AddObservation(playerRigidbody.velocity.x);
+        sensor.AddObservation(playerRigidbody.velocity.z);
     }
 
     public override void OnActionReceived(float[] vectorAction)
     {
-        base.OnActionReceived(vectorAction);
+        var vectorForce = new Vector3();
+        vectorForce.x = vectorAction[0];
+        vectorForce.z = vectorAction[1];
+
+        playerRigidbody.AddForce(vectorForce * speed);
     }
 
     public override void Heuristic(float[] actionsOut)
