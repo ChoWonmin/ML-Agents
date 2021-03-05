@@ -854,7 +854,7 @@ MonoBehaviour:
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
   m_BehaviorType: 0
-  m_BehaviorName: PlayerMaze
+  m_BehaviorName: RollerBall
   TeamId: 0
   m_UseChildSensors: 1
 --- !u!114 &1523368693
@@ -875,3 +875,4 @@ MonoBehaviour:
   MaxStep: 0
   speed: 10
   target: {fileID: 921407013}
+  distanceRequired: 1.5

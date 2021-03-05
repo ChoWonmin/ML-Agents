@@ -1,0 +1,29 @@
+{
+    "MazeBall": {
+        "checkpoints": [
+            {
+                "steps": 5466,
+                "file_path": "results/MazeBall/MazeBall/MazeBall-5466.onnx",
+                "reward": null,
+                "creation_time": 1620143085.880537,
+                "auxillary_file_paths": [
+                    "results/MazeBall/MazeBall/MazeBall-5466.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5466,
+            "file_path": "results/MazeBall/MazeBall.onnx",
+            "reward": null,
+            "creation_time": 1620143085.880537,
+            "auxillary_file_paths": [
+                "results/MazeBall/MazeBall/MazeBall-5466.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.26.0",
+        "torch_version": "1.8.1"
+    }
+}
