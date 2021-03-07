@@ -6,6 +6,7 @@ using Unity.MLAgents.Sensors;
 
 public class PlayerAgent : Agent
 {
+    #region Exposed Instance Variables
     [SerializeField]
     private float speed = 1.0f;
 
@@ -15,11 +16,28 @@ public class PlayerAgent : Agent
     [SerializeField]
     private float distanceRequired = 1.5f;
 
+    [SerializeField]
+    private MeshRenderer groundRender;
+
+    [SerializeField]
+    private Material successMaterial;
+
+    [SerializeField]
+    private Material failureMaterial;
+
+    [SerializeField]
+    private Material defaultMaterial;
+    #endregion
+
+
+    #region Private Instance Variables
     private Rigidbody playerRigidbody;
 
     private Vector3 originalPosition;
 
     private Vector3 originalTargetPosition;
+    #endregion
+
 
     public override void Initialize()
     {
@@ -67,6 +85,8 @@ public class PlayerAgent : Agent
         {
             SetReward(1.0f);
             EndEpisode();
+
+            StartCoroutine(SwapGroundMaterial(successMaterial, 0.5f));
         }
 
         // we are not doing so good
@@ -75,6 +95,8 @@ public class PlayerAgent : Agent
             EndEpisode();
 
             // go back and punish the agent for their performance
+
+            StartCoroutine(SwapGroundMaterial(failureMaterial, 0.5f));
         }
     }
 
@@ -83,4 +105,12 @@ public class PlayerAgent : Agent
         actionsOut[0] = Input.GetAxis("Vertical"); // x
         actionsOut[1] = Input.GetAxis("Horizontal"); // z
     }
+
+    private IEnumerator SwapGroundMaterial(Material material, float time)
+    {
+        groundRender.material = material;
+        yield return new WaitForSeconds(time);
+        groundRender.material = defaultMaterial;
+    }
+
 }
