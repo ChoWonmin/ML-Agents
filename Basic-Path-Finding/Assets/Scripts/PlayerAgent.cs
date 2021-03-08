@@ -17,7 +17,7 @@ public class PlayerAgent : Agent
     private float distanceRequired = 1.5f;
 
     [SerializeField]
-    private MeshRenderer groundRender;
+    private MeshRenderer groundMeshRender;
 
     [SerializeField]
     private Material successMaterial;
@@ -92,6 +92,7 @@ public class PlayerAgent : Agent
         // we are not doing so good
         if(transform.localPosition.y < 0)
         {
+            
             EndEpisode();
 
             // go back and punish the agent for their performance
@@ -108,9 +109,9 @@ public class PlayerAgent : Agent
 
     private IEnumerator SwapGroundMaterial(Material material, float time)
     {
-        groundRender.material = material;
+        groundMeshRender.material = material;
         yield return new WaitForSeconds(time);
-        groundRender.material = defaultMaterial;
+        groundMeshRender.material = defaultMaterial;
     }
 
 }
