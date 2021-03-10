@@ -92,7 +92,7 @@ public class PlayerAgent : Agent
         // we are not doing so good
         if(transform.localPosition.y < 0)
         {
-            
+            SetReward(-1.0f);
             EndEpisode();
 
             // go back and punish the agent for their performance
