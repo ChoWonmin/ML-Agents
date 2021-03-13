@@ -2,31 +2,22 @@
     "MazeBall": {
         "checkpoints": [
             {
-                "steps": 499945,
-                "file_path": "results/MazeBall/MazeBall/MazeBall-499945.onnx",
+                "steps": 405254,
+                "file_path": "results/MazeBall/MazeBall/MazeBall-405254.onnx",
                 "reward": null,
-                "creation_time": 1615443205.749813,
+                "creation_time": 1615532132.271638,
                 "auxillary_file_paths": [
-                    "results/MazeBall/MazeBall/MazeBall-499945.pt"
-                ]
-            },
-            {
-                "steps": 500137,
-                "file_path": "results/MazeBall/MazeBall/MazeBall-500137.onnx",
-                "reward": null,
-                "creation_time": 1615443205.8022048,
-                "auxillary_file_paths": [
-                    "results/MazeBall/MazeBall/MazeBall-500137.pt"
+                    "results/MazeBall/MazeBall/MazeBall-405254.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 500137,
+            "steps": 405254,
             "file_path": "results/MazeBall/MazeBall.onnx",
             "reward": null,
-            "creation_time": 1615443205.8022048,
+            "creation_time": 1615532132.271638,
             "auxillary_file_paths": [
-                "results/MazeBall/MazeBall/MazeBall-500137.pt"
+                "results/MazeBall/MazeBall/MazeBall-405254.pt"
             ]
         }
     },
