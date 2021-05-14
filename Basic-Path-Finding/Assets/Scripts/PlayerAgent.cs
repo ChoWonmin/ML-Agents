@@ -92,11 +92,21 @@ public class PlayerAgent : Agent
         // we are not doing so good
         if(transform.localPosition.y < 0)
         {
-            SetReward(-1.0f);
+            float distanceFromTargetExceptY = Vector2.Distance(
+                new Vector2(
+                    transform.localPosition.x,
+                    transform.localPosition.z
+                 ),
+                new Vector2(
+                    target.transform.localPosition.x,
+                    target.transform.localPosition.z
+                 )
+            );
+
+            SetReward(-distanceFromTargetExceptY / 25.0f - 1.0f);
             EndEpisode();
 
             // go back and punish the agent for their performance
-
             StartCoroutine(SwapGroundMaterial(failureMaterial, 0.5f));
         }
     }

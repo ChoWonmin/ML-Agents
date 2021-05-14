@@ -1,0 +1,56 @@
+{
+    "MazeBall": {
+        "checkpoints": [
+            {
+                "steps": 406053,
+                "file_path": "results/MazeBall_02/MazeBall/MazeBall-406053.onnx",
+                "reward": 1.0,
+                "creation_time": 1626176696.148598,
+                "auxillary_file_paths": [
+                    "results/MazeBall_02/MazeBall/MazeBall-406053.pt"
+                ]
+            },
+            {
+                "steps": 499972,
+                "file_path": "results/MazeBall_02/MazeBall/MazeBall-499972.onnx",
+                "reward": 1.0,
+                "creation_time": 1626182586.689604,
+                "auxillary_file_paths": [
+                    "results/MazeBall_02/MazeBall/MazeBall-499972.pt"
+                ]
+            },
+            {
+                "steps": 999975,
+                "file_path": "results/MazeBall_02/MazeBall/MazeBall-999975.onnx",
+                "reward": 1.0,
+                "creation_time": 1626183474.122599,
+                "auxillary_file_paths": [
+                    "results/MazeBall_02/MazeBall/MazeBall-999975.pt"
+                ]
+            },
+            {
+                "steps": 1213224,
+                "file_path": "results/MazeBall_02/MazeBall/MazeBall-1213224.onnx",
+                "reward": 1.0,
+                "creation_time": 1626183862.359209,
+                "auxillary_file_paths": [
+                    "results/MazeBall_02/MazeBall/MazeBall-1213224.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1213224,
+            "file_path": "results/MazeBall_02/MazeBall.onnx",
+            "reward": 1.0,
+            "creation_time": 1626183862.359209,
+            "auxillary_file_paths": [
+                "results/MazeBall_02/MazeBall/MazeBall-1213224.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.26.0",
+        "torch_version": "1.8.1"
+    }
+}
