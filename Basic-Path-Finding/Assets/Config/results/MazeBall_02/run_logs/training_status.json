@@ -2,24 +2,6 @@
     "MazeBall": {
         "checkpoints": [
             {
-                "steps": 406053,
-                "file_path": "results/MazeBall_02/MazeBall/MazeBall-406053.onnx",
-                "reward": 1.0,
-                "creation_time": 1626176696.148598,
-                "auxillary_file_paths": [
-                    "results/MazeBall_02/MazeBall/MazeBall-406053.pt"
-                ]
-            },
-            {
-                "steps": 499972,
-                "file_path": "results/MazeBall_02/MazeBall/MazeBall-499972.onnx",
-                "reward": 1.0,
-                "creation_time": 1626182586.689604,
-                "auxillary_file_paths": [
-                    "results/MazeBall_02/MazeBall/MazeBall-499972.pt"
-                ]
-            },
-            {
                 "steps": 999975,
                 "file_path": "results/MazeBall_02/MazeBall/MazeBall-999975.onnx",
                 "reward": 1.0,
@@ -36,15 +18,42 @@
                 "auxillary_file_paths": [
                     "results/MazeBall_02/MazeBall/MazeBall-1213224.pt"
                 ]
+            },
+            {
+                "steps": 1217969,
+                "file_path": "results/MazeBall_02/MazeBall/MazeBall-1217969.onnx",
+                "reward": 1.0,
+                "creation_time": 1629613371.790999,
+                "auxillary_file_paths": [
+                    "results/MazeBall_02/MazeBall/MazeBall-1217969.pt"
+                ]
+            },
+            {
+                "steps": 1232348,
+                "file_path": "results/MazeBall_02/MazeBall/MazeBall-1232348.onnx",
+                "reward": null,
+                "creation_time": 1629613506.375509,
+                "auxillary_file_paths": [
+                    "results/MazeBall_02/MazeBall/MazeBall-1232348.pt"
+                ]
+            },
+            {
+                "steps": 1249028,
+                "file_path": "results/MazeBall_02/MazeBall/MazeBall-1249028.onnx",
+                "reward": 1.0,
+                "creation_time": 1629615418.4116879,
+                "auxillary_file_paths": [
+                    "results/MazeBall_02/MazeBall/MazeBall-1249028.pt"
+                ]
             }
         ],
         "final_checkpoint": {
-            "steps": 1213224,
+            "steps": 1249028,
             "file_path": "results/MazeBall_02/MazeBall.onnx",
             "reward": 1.0,
-            "creation_time": 1626183862.359209,
+            "creation_time": 1629615418.4116879,
             "auxillary_file_paths": [
-                "results/MazeBall_02/MazeBall/MazeBall-1213224.pt"
+                "results/MazeBall_02/MazeBall/MazeBall-1249028.pt"
             ]
         }
     },
