@@ -9,5 +9,8 @@
 ![](./images/rsult005.jpeg)
 ![](./images/rsult006.jpeg)
 
-### 시물레이션 동영상
+---
+## 시물레이션 동영상
 
+### 100번 학습
+[![Watch the video](./images/mazeball_0.png)](./images/mazeball_0.mov)
