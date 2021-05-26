@@ -14,3 +14,12 @@
 
 ### 100번 학습
 [![Watch the video](./images/mazeball_0.png)](./images/mazeball_0.mov)
+
+### 20,000번 학습
+[![Watch the video](./images/mazeball_1.png)](./images/mazeball_1.mov)
+
+### 80,000번 학습
+[![Watch the video](./images/mazeball_2.png)](./images/mazeball_2.mov)
+
+### 300,000번 학습
+[![Watch the video](./images/retult.png)](./images/retult.mov)
