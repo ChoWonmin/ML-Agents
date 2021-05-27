@@ -23,3 +23,6 @@
 
 ### 300,000번 학습
 [![Watch the video](./images/retult.png)](./images/retult.mov)
+
+### 자동주차 학습 결과
+[![Watch the video](./images/retult.png)](./images/retult.mov)
