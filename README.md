@@ -1,7 +1,5 @@
 # ML-Agents
 
-[![Watch the video](./images/retult.png)](./images/retult.mov)
-
 ![](./images/rsult001.jpeg)
 ![](./images/rsult002.jpeg)
 ![](./images/rsult003.jpeg)
@@ -25,4 +23,4 @@
 [![Watch the video](./images/retult.png)](./images/retult.mov)
 
 ### 자동주차 학습 결과
-[![Watch the video](./images/retult.png)](./images/retult.mov)
+[![Watch the video](./images/auto.png)](./images/auto.mov)
